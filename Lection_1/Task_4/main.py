@@ -5,45 +5,28 @@ print("1) Addition\n2) Substraction\n3) Multiplication\n4) Division\n5) Square r
 
 userChoise = input("Choose an option(number without brackets): ")
 
+if userChoise == '5':
+    num_SQRT = float(input("Your number: "))
+
+else:
+    firstNum = float(input("\nFirst number: "))
+    secondNum = float(input("Second number: "))
 
 match userChoise:
     case '1':
-        firstNum = float(input("\nFirst number: "))
-        secondNum = float(input("Second number: "))
-        result_1 = (firstNum + secondNum)
-       
-        print(f"{firstNum} + {secondNum} = {result_1}\n")
+        print(f"\n{firstNum} + {secondNum} =",firstNum + secondNum)
     
     case '2':
-        firstNum = float(input("\nFirst number: "))
-        secondNum = float(input("Second number: "))
-        result_2 = (firstNum - secondNum)
-       
-        print(f"{firstNum} - {secondNum} = {result_2}\n")
+        print(f"\n{firstNum} - {secondNum} =",firstNum - secondNum)
     
     case '3':
-        firstNum = float(input("\nFirst number: "))
-        secondNum = float(input("Second number: "))
-        result_3 = (firstNum * secondNum)
-        
-        print(f"{firstNum} * {secondNum} = {result_3}\n")
+        print(f"\n{firstNum} * {secondNum} =",firstNum * secondNum)
 
     case '4':
-        firstNum = float(input("\nFirst number: "))
-        secondNum = float(input("Second number: "))
-        result_4 = (firstNum / secondNum)
-        
-        print(f"\n{firstNum} / {secondNum} = {result_4}")
+        print(f"\n{firstNum} / {secondNum} =",firstNum / secondNum)
 
     case '5':
-        num_SQRT = float(input("Your number: "))
-        result_5 = (sqrt(num_SQRT))
-       
-        print(f"{result_5} is your result\n")
+        print("\n{} is your result".format (sqrt(num_SQRT)))
 
     case '6':
-        firstNum = float(input("\nFirst number: "))
-        secondNum = float(input("Exponentiation number: "))
-        result_6 = (firstNum ** secondNum)
-
-        print(f"Exponentiation result is {result_6}\n")
+        print(f"\nExponentiation result is",firstNum ** secondNum)
