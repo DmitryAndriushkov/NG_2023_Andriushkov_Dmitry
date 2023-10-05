@@ -1,18 +1,16 @@
 
-print("\nHi! This program can:")
-print("1) Convert Celsius to Fahrenheit\n2) Convert Fahrenheit to Celsius")
+print("1) Convert Celsius to Fahrenheit")
+print("2) Convert Fahrenheit to Celsius")
 
-userChoise = input("\nPlease choose an option(number without brackets): ")
+userChoice = input("Please choose an option (1 or 2): ")
 
-if userChoise == '1':
-    ceslsius_num = float(input("Enter degrees in Celsius: "))
-    result_FAHR = (ceslsius_num * (9/5) + 32)
-    print(f"\nYour result is {result_FAHR} degrees Fahrenheit")
+if userChoice == '1':
+    celsius = float(input("Enter degrees in Celsius: "))
+    print(f"{celsius} degrees Celsius is {celsius * 9/5 + 32} degrees Fahrenheit")
 
-elif userChoise == '2':
-    fahrenheit_num = float(input("Enter degrees in Fahrenheit: "))
-    result_CEL = ((fahrenheit_num - 32) * 5/9)
-    print(f"\nYour result is {result_CEL} degrees Celsius")
+elif userChoice == '2':
+    fahrenheit = float(input("Enter degrees in Fahrenheit: "))
+    print(f"{fahrenheit} degrees Fahrenheit is {(fahrenheit - 32) * 5/9} degrees Celsius")
 
 else:
-    print("Wrong number. Please choose a number without brackets(1 or 2)!!!\n")
+    print("Invalid choice. Please choose 1 or 2")
