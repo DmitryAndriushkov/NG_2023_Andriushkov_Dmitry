@@ -1,14 +1,13 @@
 
-print("\nHi! This program can output vowels letters of your string")
+print("\nHi! This program can output vowel letters of your string")
 
-userInput = input("\nWrite your string: ")
+userInput = input("Write your string: ")
 
 lettersLst = []
-vowLetters = ('A', 'E', 'I', 'O', 'U', 'Y', 'a', 'e', 'i', 'o', 'u', 'y')
+vowLetters = "AEIOUYaeiouy"
 
 for letter in userInput:
-    if letter in vowLetters not in lettersLst:
+    if letter in vowLetters and letter not in lettersLst:
         lettersLst.append(letter)
 
-print("\nAmount of vowels letters in string: ", len(lettersLst))
-print("List of vowels letters: ", sorted(lettersLst))
+print("\nList of vowel letters:", sorted(lettersLst))
