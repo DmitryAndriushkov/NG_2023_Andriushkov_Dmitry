@@ -7,7 +7,7 @@ lettersLst = []
 vowLetters = "aeiouy"
 
 for letter in userInput.lower():
-    if letter in vowLetters and letter not in lettersLst:
+    if letter in vowLetters:
         lettersLst.append(letter)
 
 print("\nList of vowel letters:", sorted(lettersLst))
